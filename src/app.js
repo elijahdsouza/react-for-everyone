@@ -1,7 +1,15 @@
 import React from "react";
-import Greeting from "./greeting";
+import ContactsList from "./ContactsList"
 
-React.render(
-  <Greeting name="World"/>,
-  document.body
-);
+class App extends React.Component {
+  render(){
+    return (
+      <div>
+        <h1>ContactsList</h1>
+        <ContactsList />
+      </div>
+    )
+  }
+}
+
+React.render(<App/>, document.getElementById('app'));
